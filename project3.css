@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    box-sizing: border-box;    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#minicircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 9999;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#main{
+    width: 100%;
+    background-color: black;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+    position: relative;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2vw 3vw;
+}
+#nav>a{
+    text-decoration: none;
+ 
+    color: #fff;
+}
+#nav>h5{
+    font-size: 1.1vw;
+    font-weight: 100;
+}
+#page1>h1{
+    font-size: 8vw;
+    margin-top: 2vw;
+    margin-left: 2.9vw;
+    opacity: 0.6;
+}
+#headingh1{
+    width: fit-content;
+    /* background-color: brown; */
+    
+}
+#headingh1>h1{
+    font-size:8vw;
+    margin-left: 12vw;
+    line-height: 0.9;
+    opacity: 0.6;
+}
+#headingh1>h5{
+    text-align: right;
+    font-size: 14px;
+    font-weight: 100;
+    /* background-color: crimson; */
+}
+#shorth1{
+    width: 100%;
+    text-align: right;
+    margin-top: 5vw;
+    
+}
+#shorth1>h5{
+    font-size: 1vw;
+    text-transform: uppercase;
+    line-height: 2vw;
+    margin-right: 3vw;
+    font-weight: 400;
+}
+#page1-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+}
+#page1-footer>a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1vw;
+}
+#circlebtn{
+    display: flex;
+    align-items: center;
+    
+    gap: .4vw;
+}
+.circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page2{
+    padding-top: 180px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+}
+.elem{
+    padding: 4vw 3vw;
+    width: 86%;
+    border-top: 1px solid #666;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0;
+    position: relative;
+}
+.elem>h1{
+    color: #fff;
+    font-size: 5vw;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+.elem img{
+    height: 140%;
+    position: absolute;    
+    z-index: 999;
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+.elem-last{
+    border-bottom: 1px solid #666;
+}
+#about{
+    width: 100%;
+    background-color: black;
+    padding: 12vw 10vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding-left: 40vw;
+}
+#about>img{
+    width: 200px;
+   
+}
+#textabout{
+    /* background-color: brown; */
+    width: 27rem;
+}
+#textabout>h5{
+    text-transform: uppercase;
+    opacity: .7;
+    margin-bottom: 10px;
+}
+#textabout>p{
+    line-height: 24px;
+   
+    margin-bottom: 30px;
+}
+#textabout>a{
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+#subscribe{
+    padding: 3vw 2vw;
+    background-color: black;
+    color: #fff;
+    padding-bottom: 10vw;
+}
+#subscribe>h5{
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+#subscribe>h3{
+   font-size: 17px;
+   margin-top: 10px;
+}
+#footer-content{
+    background-color: black;
+    padding: 2vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footerleft{
+   color: #fff;
+   display: flex;
+    align-items: center;
+    gap: 25px;
+}
+#footerright{
+   text-transform: uppercase;
+   
+    display: flex;
+     align-items: center;
+     gap: 50px;
+
+}
+#footerright>a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+@media (max-width:600px) {
+    #nav>h5{
+        font-size: 3.6vw;
+    }
+    #nav{
+        padding-top: 4vw;
+    }
+    #page1>h1{
+        margin-top: 19vw;
+        font-size: 11vw;
+    }
+    #headingh1>h1{
+        font-size: 11vw;
+    }
+    #headingh1>h5{
+        font-size: 2vw;
+    }
+    #shorth1{
+        margin-top: 19vw;
+    }
+    #shorth1>h5{
+        font-size: 2.5vw;
+        line-height: 22px;
+    }
+    #page1-footer>a{
+        font-size: 2.1vw;
+    }
+}
